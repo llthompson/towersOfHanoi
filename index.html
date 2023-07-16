@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>Towers Of Hanoi</h1>
-    <hr/>
-      <div id="top-row" data-row="top" class="red row" onclick="selectRow(this)"></div>
-      <div id="middle-row" data-row="middle" class="yellow row" onclick="selectRow(this)"></div>
-      <div id="bottom-row" class="green row" data-row="bottom" onclick="selectRow(this)">
-        <div id="4" data-size="4" data-color="yellow" class="stone" ></div>
-        <div id="3" data-size="3" data-color="red" class="stone" ></div>
-        <div id="2" data-size="2" data-color="green" class="stone" ></div>
-        <div id="1" data-size="1" data-color="blue" class="stone" ></div>
-      </div>
-    <hr/>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Montserrat:wght@100;300;400;500;600;700&family=Mulish:wght@300;400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Towers of Hanoi</title>
+</head>
+
+<body>
+  <h1>Towers Of Hanoi</h1>
+
+  <main>
+
+    <div id="c" data-row="top" class="red row" onclick="selectRow(this)"></div>
+    <div id="b" data-row="middle" class="yellow row" onclick="selectRow(this)"></div>
+    <div id="a" class="green row" data-row="bottom" onclick="selectRow(this)">
+      <!-- <div id="4" data-size="4" data-color="yellow" class="stone"></div>
+      <div id="3" data-size="3" data-color="red" class="stone"></div>
+      <div id="2" data-size="2" data-color="green" class="stone"></div>
+      <div id="1" data-size="1" data-color="blue" class="stone"></div> -->
+    </div>
+
+  </main>
+  <script src="game.js"></script>
+
+</body>
+
 </html>
-
-
-
