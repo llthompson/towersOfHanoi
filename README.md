@@ -1,3 +1,14 @@
+
+CODE PLAN
+
+Figure out how to code
+Make the blocks bigger to tell which is which
+
+First we want to use the pop method to remove the last block in the starting stack. Then we can push that onto another stack. 
+Next, we need to verify the the stack we are moving it to will be a legal move. The new block should not be bigger than the last block on the stack we're moving it to.
+
+
+
 # JS211_Towers of Hanoi[![CircleCI](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages.svg?style=svg)](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages)
 
 ![](http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png)

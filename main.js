@@ -8,13 +8,13 @@ const rl = readline.createInterface({
 });
 
 // An object that represents the three stacks of Towers of Hanoi; 
-  // * each key is an array of Numbers: 
-    // * A is the far-left, 
-    // * B is the middle, 
-    // * C is the far-right stack
-      // * Each number represents the largest to smallest tokens: 
-        // * 4 is the largest, 
-        // * 1 is the smallest
+// * each key is an array of Numbers: 
+// * A is the far-left, 
+// * B is the middle, 
+// * C is the far-right stack
+// * Each number represents the largest to smallest tokens: 
+// * 4 is the largest, 
+// * 1 is the smallest
 
 let stacks = {
   a: [4, 3, 2, 1],
@@ -30,27 +30,40 @@ const printStacks = () => {
 }
 
 // Next, what do you think this function should do?
-const movePiece = () => {
+const movePiece = (startStack, endStack) => {
   // Your code here
-
+  const blockToMove = stacks[startStack].pop()
+  stacks[endStack].push(blockToMove)
 }
 
 // Before you move, should you check if the move it actually allowed? Should 3 be able to be stacked on 2
-const isLegal = () => {
+const isLegal = (startStack, endStack) => {
   // Your code here
+  if (stacks[endStack].length === 0) {
+    return true
+  }
 
+  const blockToMove = stacks[startStack][-1]
+  const topBlock = stacks[endStack][-1]
+  return topBlock > blockToMove
 }
 
 // What is a win in Towers of Hanoi? When should this function run?
 const checkForWin = () => {
   // Your code here
-
+  if (JSON.stringify(stacks.b) === JSON.stringify([4, 3, 2, 1]) || JSON.stringify(stacks.c) === JSON.stringify([4, 3, 2, 1])) {
+    return true
+  }
+  return false
 }
 
 // When is this function called? What should it do with its argument?
 const towersOfHanoi = (startStack, endStack) => {
   // Your code here
-
+  if (isLegal(startStack, endStack)) {
+    movePiece(startStack, endStack)
+  }
+  checkForWin()
 }
 
 const getPrompt = () => {
