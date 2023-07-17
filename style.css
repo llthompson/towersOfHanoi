@@ -4,7 +4,6 @@ body {
   font-weight: 300;
   font-size: 18px;
   color: #646464;
-  display: block;
 }
 
 h1 {
@@ -22,14 +21,15 @@ h1 {
 
 
 main {
-  max-width: 95%;
-  margin: 10px auto;
-  padding: 20px;
+  max-width: 50%;
+  margin: 15px auto;
+  padding: 10px;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px #00000033;
   border-radius: 6px;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .row {
@@ -38,11 +38,11 @@ main {
   flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: center;
-  height: 154px;
-  width: 200px;
-  margin: 25px auto;
-  border: 2px;
+  height: 130px;
+  width: 220px;
+  margin: 15px 15px;
   border-radius: 5px;
+  padding-bottom: 3px;
   box-shadow: 3px 5px 4px #00000033;
 }
 
@@ -72,29 +72,37 @@ main {
 
 [data-size="1"] {
   height: 20px;
-  width: 50px;
+  width: 30%;
   background-color: #DCCCFF;
 }
 
 [data-size="2"] {
   height: 20px;
-  width: 75px;
+  width: 50%;
   background-color: #CC80CC;
 }
 
 [data-size="3"] {
   height: 20px;
-  width: 100px;
+  width: 70%;
   background-color: #932F6D;
 }
 
 [data-size="4"] {
   height: 20px;
-  width: 150px;
+  width: 90%;
   background-color: #420039;
 }
+
 
 #announce-game-won {
   font-size: 55px;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  main {
+    max-width: 95%;
+  }
+  
 }
