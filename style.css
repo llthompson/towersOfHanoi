@@ -34,7 +34,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 34px;
+  height: 54px;
   margin: 25px;
   border: 2px;
   border-radius: 5px;
@@ -67,21 +67,25 @@ main {
 
 [data-size="1"] {
   height: 33px;
+  width: 15px;
   background-color: #DCCCFF;
 }
 
 [data-size="2"] {
   height: 38px;
+  width: 15px;
   background-color: #CC80CC;
 }
 
 [data-size="3"] {
   height: 43px;
+  width: 15px;
   background-color: #932F6D;
 }
 
 [data-size="4"] {
   height: 48px;
+  width: 15px;
   background-color: #420039;
 }
 
