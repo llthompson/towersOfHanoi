@@ -81,4 +81,4 @@ const towersOfHanoi = (startStack, endStack) => {
     checkForWin()
 }
 
-updateBoard(stacks)
+// updateBoard(stacks)
