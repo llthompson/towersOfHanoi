@@ -1,11 +1,8 @@
 
 CODE PLAN
 
-Figure out how to code
-Make the blocks bigger to tell which is which
+Update the movePiece function to grab the last stone from one stack and append it to another stack. Update isLegal to only allow a stack to be appended if the stone is smaller than than the existing stone. Update the checkForWin function to convert the arrays into strings, then compare if the array in either stack b or c is in the correct order. 
 
-First we want to use the pop method to remove the last block in the starting stack. Then we can push that onto another stack. 
-Next, we need to verify the the stack we are moving it to will be a legal move. The new block should not be bigger than the last block on the stack we're moving it to.
 
 
 
