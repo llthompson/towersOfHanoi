@@ -1,7 +1,10 @@
 
 CODE PLAN
+Lisa Thompson 7/15/2023
 
-Update the movePiece function to grab the last stone from one stack and append it to another stack. Update isLegal to only allow a stack to be appended if the stone is smaller than than the existing stone. Update the checkForWin function to convert the arrays into strings, then compare if the array in either stack b or c is in the correct order. 
+Update the movePiece function to grab the last stone from one stack and append it to another stack. 
+Update isLegal to only allow a stack to be appended if the stone is smaller than than the existing stone. 
+Update the checkForWin function to convert the arrays into strings, then compare if the array in either stack b or c is in the correct order. 
 
 
 

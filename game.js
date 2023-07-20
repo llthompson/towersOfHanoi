@@ -19,16 +19,9 @@ const updateBoard = (stacks) => {
             stack.appendChild(stone)
         });
     });
-
 }
 
 const selectRow = (row) => {
-    // const currentRow = row.getAttribute("data-row")
-
-    // console.log("Yay, we clicked an item", row)
-    // console.log("Here is the stone's id: ", row.id)
-    // console.log("Here is the stone's data-size: ", currentRow)
-    console.log('stone ', stone)
     if (stone === null) {
         pickUpStone(row.id)
 
@@ -42,7 +35,6 @@ const selectRow = (row) => {
 const pickUpStone = (rowID) => {
     if (stacks[rowID].length > 0) {
         stone = stacks[rowID].pop()
-
     }
 }
 
